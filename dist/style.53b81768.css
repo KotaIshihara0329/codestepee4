@@ -1,0 +1,168 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+::selection {
+  background-color: pink;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+/* Typography */
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+
+
+.container {
+    margin-top: 10rem;
+}
+
+
+.text {
+    padding: 0 5% 5% 5%;
+    z-index: 10;
+
+}
+
+.text h1 {
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.text h2 {
+    margin-bottom: 5.6rem;
+    letter-spacing: 4.5px;
+}
+
+.text p {
+    margin-bottom: 0;
+}
+
+.container img {
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+}
+
+.br {
+    display: none;
+}
+
+
+
+
+@media screen and (min-width:900px) {
+   
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+
+
+    .text h1 {
+        font-size: 7rem;
+
+    }
+
+    .text h2 {
+        font-size: 1.4rem;
+        
+    }
+    .right {
+        position: relative;
+    }
+
+    .text p {
+        width: 34rem;
+    }
+
+
+    .br {
+        display: block;
+    }
+
+    .right::before {
+        content: "";
+        width: 20rem;
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        right: 75rem;
+        transform: skewX(-18deg);
+        background-color: white;
+
+       
+    }
+
+    .text {
+        position: absolute;
+        top: 10rem;
+    }
+
+
+
+
+
+    .container .left {
+        width: 35%;
+    }
+
+    .container .right {
+        width: 65%;
+        
+    }
+
+
+}
+
+
+/*# sourceMappingURL=/style.53b81768.css.map */
